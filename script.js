@@ -249,10 +249,7 @@
     const title = document.getElementById("worksheetTitle").value.trim() || "Math Practice";
     const topic = document.getElementById("topic").value;
     const difficulty = document.getElementById("difficulty").value;
-    const numProblems = Math.min(
-      60,
-      Math.max(4, parseInt(document.getElementById("numProblems").value, 10) || 20)
-    );
+    const numProblems = parseInt(document.getElementById("numProblems").value, 10) || 25;
     const columns = document.getElementById("columns").value;
     const includeHeader = document.getElementById("includeHeader").checked;
     const includeAnswerKey = document.getElementById("includeAnswerKey").checked;
